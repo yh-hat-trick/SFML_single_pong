@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.1)
+project(singlepong)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+add_executable(singlepong src/main.cpp src/CircleCollision.cpp)
+target_link_libraries(singlepong sfml-graphics sfml-window sfml-system sfml-audio sfml-network )
